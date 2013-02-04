@@ -32,12 +32,12 @@ var Lanyrd = {
     })
   },
   profile: function (username, cb){
-    this.get('/profile' + slug + '/', function(error, response, body){
+    this.get('/profile' + username + '/', function(error, response, body){
       cb(error, response, body)
     })
   },
   futureEvents: function (username, cb){
-    this.get('/profile' + slug + '/action', function(error, response, body){
+    this.get('/profile' + username + '/action', function(error, response, body){
       cb(error, response, body['events'])
     })
   }
