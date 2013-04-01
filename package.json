@@ -2,7 +2,7 @@
   "author": "Andrew Nesbitt",
   "name": "lanyrd",
   "description": "Unoffical Lanyrd API client",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "homepage": "https://github.com/andrew/node-lanyrd",
   "keywords": ["lanyrd", "api", "events"],
   "bugs" :
