@@ -1,6 +1,14 @@
 var request = require('request')
 var Lanyrd = {
-  get: function (path, cb){ request({url: 'http://lanyrd.com/mobile/ios2/'+path, json: true}, cb) },
+  get: function (path, cb){
+    var opts = {
+                url: 'http://lanyrd.com/mobile/ios2/'+path, 
+                json: true,
+                headers: {
+                  'X-Lanyrd-Auth': Math.random().toString()
+                }}
+    request(opts, cb)
+  },
   popular: function (cb){
     this.get('search/', function(error, response, body){
       cb(error, response, body['sections'][0]['rows'])
