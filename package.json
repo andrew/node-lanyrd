@@ -1,5 +1,5 @@
 {
-  "author": "Andrew Nesbitt",
+  "author": "Andrew Nesbitt <andrewnez@gmail.com> (http://andrew.github.io)",
   "name": "lanyrd",
   "description": "Unoffical Lanyrd API client",
   "version": "0.1.0",
