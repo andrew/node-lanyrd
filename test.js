@@ -12,7 +12,14 @@ describe("popular events", function() {
 describe("future events", function() {
   it("should load them", function(done) {
     Lanyrd.futureEvents('teabass', function(err, resp, events){
-      console.log(events)
+      done(err);
+    })
+  });
+})
+
+describe("attendees", function() {
+  it("should load them", function(done) {
+    Lanyrd.attendees('hybridconf', '2013', function(err, resp, attendees){
       done(err);
     })
   });

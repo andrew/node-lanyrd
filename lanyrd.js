@@ -1,4 +1,11 @@
 var request = require('request')
+var getRows = function(rows){
+  var merged = [];
+  for(var i=0; i<rows.length; i++) {
+    merged = merged.concat(rows[i]['rows']);
+  }
+  return merged
+}
 var Lanyrd = {
   get: function (path, cb){
     var opts = {
@@ -26,17 +33,17 @@ var Lanyrd = {
   },
   speakers: function (slug, year, cb){
     this.get(year +'/' + slug + '/speakers/', function(error, response, body){
-      cb(error, response, body['sections'][0]['rows'])
+      cb(error, response, getRows(body['sections']))
     })
   },
   attendees: function (slug, year, cb){
     this.get(year +'/' + slug + '/attendees/', function(error, response, body){
-      cb(error, response, body['sections'][0]['rows'])
+      cb(error, response, getRows(body['sections']))
     })
   },
   schedule: function (slug, year, cb){
     this.get(year +'/' + slug + '/schedule/', function(error, response, body){
-      cb(error, response, body['sections'][0]['rows'])
+      cb(error, response, getRows(body['sections']))
     })
   },
   profile: function (username, cb){
