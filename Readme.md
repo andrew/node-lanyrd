@@ -6,7 +6,7 @@ Unoffical Lanyrd API client
 
     npm install lanyrd
     
-    var Lanyrd = require('Lanyrd')
+    var Lanyrd = require('lanyrd')
     
     Lanyrd.popular(function(err, resp, events){
       // popular events array
