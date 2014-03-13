@@ -24,3 +24,11 @@ describe("attendees", function() {
     })
   });
 })
+
+describe("search", function() {
+  it("should search for events with 'javascript' keyword", function(done) {
+    Lanyrd.search('javascript', function(err, resp, events) {
+      done(err);
+    });
+  });
+})

@@ -22,7 +22,7 @@ var Lanyrd = {
     })
   },
   search: function (query, cb){
-    this.this.get('search/?query='+query, function(error, response, body){
+    this.get('search/?query='+query, function(error, response, body){
       cb(error, response, body['sections'][0]['rows'])
     })
   },
