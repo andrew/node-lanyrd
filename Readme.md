@@ -1,4 +1,4 @@
-# node-lanyrd
+# [node-lanyrd](http://libraries.io/npm/lanyrd)
 
 Unoffical Lanyrd API client
 
