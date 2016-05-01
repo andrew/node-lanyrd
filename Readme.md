@@ -5,9 +5,9 @@ Unoffical Lanyrd API client
 ## Installation
 
     npm install lanyrd
-    
+
     var Lanyrd = require('lanyrd')
-    
+
     Lanyrd.popular(function(err, resp, events){
       // popular events array
     })
@@ -30,4 +30,4 @@ Tests can be ran with `npm test`
 
 ## Copyright
 
-Copyright (c) 2013 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/node-lanyrd/blob/master/LICENSE) for details.
+Copyright (c) 2016 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/node-lanyrd/blob/master/LICENSE) for details.
