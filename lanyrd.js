@@ -9,7 +9,7 @@ var getRows = function(rows){
 var Lanyrd = {
   get: function (path, cb){
     var opts = {
-                url: 'http://lanyrd.com/mobile/ios2/'+path, 
+                url: 'http://lanyrd.com/mobile/ios2/'+path,
                 json: true,
                 headers: {
                   'X-Lanyrd-Auth': Math.random().toString()
