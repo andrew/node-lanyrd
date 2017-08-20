@@ -1,8 +1,11 @@
 var request = require('request')
 var getRows = function(rows){
   var merged = [];
-  for(var i=0; i<rows.length; i++) {
-    merged = merged.concat(rows[i]['rows']);
+  if ( typeof rows !== 'undefined' && rows )
+  {
+	  for(var i=0; i<rows.length; i++) {
+		merged = merged.concat(rows[i]['rows']);
+	  }
   }
   return merged
 }
@@ -46,6 +49,11 @@ var Lanyrd = {
       cb(error, response, getRows(body['sections']))
     })
   },
+  scheduleDetail: function (date, slug, year, cb){
+	this.get(year +'/' + slug + '/schedule/' + date, function(error, response, body){
+      cb(error, response, getRows(body['sections']))
+    })
+  },  
   profile: function (username, cb){
     this.get('profile/' + username + '/', function(error, response, body){
       cb(error, response, body)
