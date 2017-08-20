@@ -1,5 +1,8 @@
 {
   "author": "Andrew Nesbitt <andrewnez@gmail.com> (http://andrew.github.io)",
+  "contributors": [
+	"André Langer <andre.langer@googlemail.com> (http://www.andré-langer.de/)"
+  ],
   "name": "lanyrd",
   "description": "Unoffical Lanyrd API client",
   "version": "0.2.1",
