@@ -1,11 +1,11 @@
 {
   "author": "Andrew Nesbitt <andrewnez@gmail.com> (http://andrew.github.io)",
   "contributors": [
-	"André Langer <andre.langer@googlemail.com> (http://www.andré-langer.de/)"
+    "André Langer <andre.langer@googlemail.com> (http://www.andré-langer.de/)"
   ],
   "name": "lanyrd",
   "description": "Unoffical Lanyrd API client",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "https://github.com/andrew/node-lanyrd",
   "keywords": [
     "lanyrd",
